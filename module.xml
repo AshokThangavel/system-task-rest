@@ -3,7 +3,7 @@
   <Document name="System-Task-REST.ZPM">
     <Module>
       <Name>System-Task-REST</Name>
-      <Version>1.0.0</Version>
+      <Version>1.0.1</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="ZPMModules.PKG"/>

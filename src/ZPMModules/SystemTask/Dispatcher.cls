@@ -102,7 +102,7 @@ ClassMethod GetClassDefinition(pTaskType As %String = "") As %String [ CodeMode 
 {
 $Select(
 	pTaskType= "taskhistory" : "%SYS.Task.History",
-	pTaskType?1(1"alltask",1"ondemandtask",1"upcomingtask"):"%SYS.Task",	
+	pTaskType?1(1"alltask",1"ondemandtask",1"upcomingtask"):"%SYS.Task",
 	pTaskType="freespace"	: "SYS.Database",
 						  1	: ""
 	)

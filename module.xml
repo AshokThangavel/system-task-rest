@@ -7,16 +7,21 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="ZPMModules.PKG"/>
-      <CSPApplication 
-        Url="/crud"
+      <CSPApplication
+        Url="/zsystemtasks"
         Recurse="1"
         MatchRoles=":{$dbrole}"
         PasswordAuthEnabled="0"
         UnauthenticatedEnabled="1"
         DispatchClass="ZPMModules.SystemTask.Dispatcher"
         ServeFiles="1"
-        CookiePath="/crud"
+        CookiePath="/zsystemtasks"
         UseCookies="2"
+        JWTAccessTokenTimeout="1900"
+        JWTAuthEnabled="1"
+        JWTRefreshTokenTimeout="1600"
+        CorsCredentialsAllowed="1"
+        CorsHeadersList="Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Access-Control-Allow-Credentials"
        />
     </Module>
   </Document>

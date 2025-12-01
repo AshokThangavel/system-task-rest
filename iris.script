@@ -1,30 +1,6 @@
-    ;do $System.OBJ.LoadDir("/home/irisowner/dev/src","ck",,1)
-
-    ;disabling password expire for development purposes
     zn "%SYS"
-    Do ##class(Security.Users).UnExpireUserPasswords("*")
-    ;
-    write "Create web application..." 
-    set webName="/crud" 
-    set webProperties("Dispatcher")="ZPMModules.SystemTask.Dispatcher" 
-    set webProperties("namespace")="user" 
-    set webProperties("Enabled")=1 
-    set webProperties("AuthEnabled")=32 
-    set sc = ##Class(Security.Applications).Create(webName,.webProperties) 
-    write sc 
-    write "web application "_webName_" created" 
-    ;
-    ; enabling callin for Embedded Python
-    do ##class(Security.Services).Get("%Service_CallIn",.prop)
-    set prop("Enabled")=1
-    set prop("AutheEnabled")=48
-    do ##class(Security.Services).Modify("%Service_CallIn",.prop)
-
+    do ##class(Security.Users).UnExpireUserPasswords("*")
     zpm "install passwordless"
-    ; importing the source code of the repository as ZPM module
-    do ##class(Security.Users).AddRoles("unknownuser","%All")
-    ; for unauthenticated webapplication
     zn "USER"
-    zpm "install swagger-ui"
-    zpm "load /home/irisowner/dev -v":1:1
+    zpm "load /home/irisowner/dev/ -v":1
     halt

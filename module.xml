@@ -17,11 +17,6 @@
         ServeFiles="1"
         CookiePath="/zsystemtasks"
         UseCookies="2"
-        JWTAccessTokenTimeout="1900"
-        JWTAuthEnabled="1"
-        JWTRefreshTokenTimeout="1600"
-        CorsCredentialsAllowed="1"
-        CorsHeadersList="Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers, Access-Control-Allow-Credentials"
        />
     </Module>
   </Document>

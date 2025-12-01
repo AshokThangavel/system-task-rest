@@ -26,16 +26,6 @@ $ docker-compose up -d
 
 Get System task details in REST service
 
-## How to Test it
-
-Run the various URLs from your Browser or Postman or similar
-
-**database information urls**
-1. Get database freespace
-   http://server:port/crud/database/freespace     (http://localhost:52773/zsystemtasks/database/freespace)
-   ![image](https://github.com/AshokThangavel/System-Task-REST/assets/58914152/2488832b-fd77-422f-a914-4abc7b8c70e3)
-
-
 **Task information urls**
 List of urls
 1. Get all task list
@@ -77,7 +67,12 @@ List of urls
   ]
   ```
 
-task history for specific task 
-http://localhost:52773/crud/task/taskhistory/ExportQueryToCSV
-![image](https://github.com/AshokThangavel/SystemTask/assets/58914152/a9289a21-1981-46be-a3d1-ec33d1abe47b)
 
+## How to Test it
+
+Run the various URLs from your Browser or Postman or similar
+
+**database information urls**
+1. Get database freespace
+   http://server:port/crud/database/freespace     (http://localhost:52773/zsystemtasks/database/freespace)
+   ![image](https://github.com/AshokThangavel/System-Task-REST/assets/58914152/2488832b-fd77-422f-a914-4abc7b8c70e3)
